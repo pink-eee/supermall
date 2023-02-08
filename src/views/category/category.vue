@@ -1,0 +1,137 @@
+<template>
+  <div class="wrapper" ref="aaa">
+    <ul class="content">
+      <li>liebiao</li>
+      <li>liebiao</li>
+      <li>liebiao</li>
+      <li>liebiao</li>
+      <li>liebiao</li>
+      <li>liebiao</li>
+      <li>liebiao</li>
+      <li>liebiao</li>
+      <li>liebiao</li>
+      <li>liebiao</li>
+      <li>liebiao</li>
+      <li>liebiao</li>
+      <li>liebiao</li>
+      <li>liebiao</li>
+      <li>liebiao</li>
+      <li>liebiao</li>
+      <li>liebiao</li>
+      <li>liebiao</li>
+      <li>liebiao</li>
+      <li>liebiao</li>
+      <li>liebiao</li>
+      <li>liebiao</li>
+      <li>liebiao</li>
+      <li>liebiao</li>
+      <li>liebiao</li>
+      <li>liebiao</li>
+      <li>liebiao</li>
+      <li>liebiao</li>
+      <li>liebiao</li>
+      <li>liebiao</li>
+      <li>liebiao</li>
+      <li>liebiao</li>
+      <li>liebiao</li>
+      <li>liebiao</li>
+      <li>liebiao</li>
+      <li>liebiao</li>
+      <li>liebiao</li>
+      <li>liebiao</li>
+      <li>liebiao</li>
+      <li>liebiao</li>
+      <li>liebiao</li>
+      <li>liebiao</li>
+      <li>liebiao</li>
+      <li>liebiao</li>
+      <li>liebiao</li>
+      <li>liebiao</li>
+      <li>liebiao</li>
+      <li>liebiao</li>
+      <li>liebiao</li>
+      <li>liebiao</li>
+      <li>liebiao</li>
+      <li>liebiao</li>
+      <li>liebiao</li>
+      <li>liebiao</li>
+      <li>liebiao</li>
+      <li>liebiao</li>
+      <li>liebiao</li>
+      <li>liebiao</li>
+      <li>liebiao</li>
+      <li>liebiao</li>
+      <li>liebiao</li>
+      <li>liebiao</li>
+      <li>liebiao</li>
+      <li>liebiao</li>
+      <li>liebiao</li>
+      <li>liebiao</li>
+      <li>liebiao</li>
+      <li>liebiao</li>
+      <li>liebiao</li>
+      <li>liebiao</li>
+      <li>liebiao</li>
+      <li>liebiao</li>
+      <li>liebiao</li>
+      <li>liebiao</li>
+      <li>liebiao</li>
+      <li>liebiao</li>
+      <li>liebiao</li>
+      <li>liebiao</li>
+      <li>liebiao</li>
+      <li>liebiao</li>
+      <li>liebiao</li>
+      <li>liebiao</li>
+      <li>liebiao</li>
+      <li>liebiao</li>
+      <li>liebiao</li>
+      <li>liebiao</li>
+      <li>liebiao</li>
+      <li>liebiao</li>
+      <li>liebiao</li>
+      <li>liebiao</li>
+      <li>liebiao</li>
+      <li>liebiao</li>
+      <li>liebiao</li>
+      <li>liebiao</li>
+      <li>liebiao</li>
+      <li>liebiao</li>
+      <li>liebiao</li>
+      <li>liebiao</li>
+      <li>liebiao</li>
+      <li>liebiao</li>
+    </ul>
+  </div>
+</template>
+
+<script>
+import BScroll from 'better-scroll'
+
+export default {
+  data(){
+    return {
+      scroll:null
+    }
+  },
+  created(){
+    
+  },
+  mounted(){
+    this.scroll = new BScroll(document.querySelector('.wrapper'),{
+      probeType:3
+    })
+    this.scroll.on('scroll',(position)=>{
+      console.log(position);
+    })
+  }
+}
+</script>
+
+<style>
+  .wrapper{
+    height:150px;
+    background-color: red;
+    overflow: hidden;
+  }
+</style>
